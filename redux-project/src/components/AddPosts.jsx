@@ -82,11 +82,10 @@ const AddPosts = () => {
 
           <button
             type="button"
-            className={`py-2 border text-lg rounded ${
-              postTitle.length > 0 && postBody.length > 0
+            className={`py-2 border text-lg rounded ${postTitle.length > 0 && postBody.length > 0
                 ? "cursor-pointer"
                 : "cursor-no-drop"
-            }`}
+              }`}
             // disabled={postTitle.length === 0 || postBody.length === 0}
             onClick={onAddPost}
           >
